@@ -38,40 +38,13 @@ fun SuperheroesApp(modifier: Modifier = Modifier) {
 
 }
 
-@Composable
-fun SuperheroesItem(
-    modifier: Modifier = Modifier
-){
-    Card(modifier = modifier) {
-        Column {
-            Row {
 
-            }
-        }
-    }
-}
 
-@Composable
-fun SuperheroeInformation(
-    @StringRes nameRes: Int,
-    @StringRes descriptionRes: Int,
-    modifier: Modifier = Modifier
-){
-    Column(modifier = modifier) {
-        Text(
-            text = stringResource(nameRes),
 
-        )
-        Text(
-            text = stringResource(descriptionRes)
-        )
-    }
-
-}
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun SuperheroesPreview() {
     SuperheroesTheme {
         SuperheroesApp()
     }
